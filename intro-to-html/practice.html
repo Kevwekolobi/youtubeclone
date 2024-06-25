@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> practice-assignment</title>
+    <style>
+        p {
+            margin-top: 0;
+            font-family: arial;
+            margin-bottom: 0;
+        }
+
+        .page-profile {
+            max-width: 500px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-info {
+            margin-left: 10px;
+        }
+
+        .profile-name {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .thumbnail-profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
+
+        .follow-button {
+            display: inline-block;
+            text-align: center;
+            background-color: rgb(29, 155, 240);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            margin-left: auto;
+            cursor: pointer;
+        }
+        .follow-button:hover {
+            background-color: rgb(222, 230, 235);
+            color: red;
+            transition:background-color 1s, color 1s;
+        }
+        .follow-button:active {
+            opacity: 0.7;
+        }
+        .header-bar {
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(29, 155, 240);
+            border-radius: 20px;
+            align-items: center;
+        }
+        .left-div {
+            width: 150px;
+        }
+        .middle-div{
+            flex: 1;
+            margin-left: 70px;
+            margin-right: 35px;
+        }
+        .right-div {
+            width: 200px;
+        }
+        .search-text {
+            width: 500px;
+            height: 30px;
+            font-size: 20px;
+            box-shadow: 1px 1px 25px rgba(0,0,0,0.15);
+            border-radius: 20px;
+            border: none;
+        }
+        .home-button {
+            color: white;
+            background-color: rgb(29, 155, 240);
+            border: none;
+            font-size: 20px;
+        }
+        .download-button {
+            color: white;
+            border-color: white;
+            background-color: rgb(29, 155, 240);
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-bar">
+        <div class="left-div">
+            <button class="home-button">Home</button>
+        </div>
+        <div class="middle-div">
+            <input class="search-text" type="text" placeholder="search">
+        </div>
+        <div class="right-div">
+            <button class="download-button">Download</button>
+        </div>
+    </div>
+    <div class="page-profile">
+        <div class="profile">
+            <img class="thumbnail-profile" src="../thumbnails/cat.jpg">
+
+            <div class="profile-info">
+                <p class="profile-name">
+                    Oliver
+                </P>
+                <p class="profile-description">
+                    the cat
+                </p>
+                <p class="profile-stats">
+                    popular
+                </p>
+            </div>
+            <button class="follow-button">
+                Follow
+            </button>
+        </div>
+        <div class="profile">
+            <img class="thumbnail-profile" src="../thumbnails/cat2.jpg">
+            <div class="profile-info">
+                <p class="profile-name">
+                    Mimi
+                </P>
+                <p class="profile-description">
+                    Sleepy cat
+                </p>
+                <p class="profile-stats">
+                    popular
+                </p>
+            </div>
+
+            <button class="follow-button">
+                Follow
+            </button>
+        </div>
+        <div class="profile">
+            <img class="thumbnail-profile" src="../thumbnails/dog.jpg">
+            <div class="profile-info">
+                <p class="profile-name">
+                    Rex
+                </P>
+                <p class="profile-description">
+                    Happy Bulldog
+                </p>
+                <p class="profile-stats">
+                    popular
+                </p>
+            </div>
+            <button class="follow-button">
+                Follow
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
